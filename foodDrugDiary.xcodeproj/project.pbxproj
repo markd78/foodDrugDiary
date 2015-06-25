@@ -14,6 +14,32 @@
 		3EE25BC31B33574E007D4887 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BC21B33574E007D4887 /* Images.xcassets */; };
 		3EE25BC61B33574E007D4887 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BC41B33574E007D4887 /* LaunchScreen.xib */; };
 		3EE25BD21B33574E007D4887 /* foodDrugDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BD11B33574E007D4887 /* foodDrugDiaryTests.swift */; };
+		3EE25BDF1B3369D3007D4887 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BDE1B3369D3007D4887 /* Entry.swift */; };
+		3EE25BE11B336A85007D4887 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BE01B336A85007D4887 /* Date.swift */; };
+		3EE25BE31B336D50007D4887 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BE21B336D50007D4887 /* Model.swift */; };
+		3EE25BE51B347B4B007D4887 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BE41B347B4B007D4887 /* EntryViewController.swift */; };
+		3EE25BE71B3C8714007D4887 /* Message-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BE61B3C8713007D4887 /* Message-50.png */; };
+		3EE25BE91B3C8749007D4887 /* Note-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BE81B3C8749007D4887 /* Note-50.png */; };
+		3EE25BFF1B3C88FA007D4887 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BEB1B3C88FA007D4887 /* Contents.json */; };
+		3EE25C001B3C88FA007D4887 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BEC1B3C88FA007D4887 /* Icon-40.png */; };
+		3EE25C011B3C88FA007D4887 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BED1B3C88FA007D4887 /* Icon-40@2x.png */; };
+		3EE25C021B3C88FA007D4887 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BEE1B3C88FA007D4887 /* Icon-40@3x.png */; };
+		3EE25C031B3C88FA007D4887 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BEF1B3C88FA007D4887 /* Icon-60@2x.png */; };
+		3EE25C041B3C88FA007D4887 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF01B3C88FA007D4887 /* Icon-60@3x.png */; };
+		3EE25C051B3C88FA007D4887 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF11B3C88FA007D4887 /* Icon-76.png */; };
+		3EE25C061B3C88FA007D4887 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF21B3C88FA007D4887 /* Icon-76@2x.png */; };
+		3EE25C071B3C88FA007D4887 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF31B3C88FA007D4887 /* Icon-Small.png */; };
+		3EE25C081B3C88FA007D4887 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF41B3C88FA007D4887 /* Icon-Small@2x.png */; };
+		3EE25C091B3C88FA007D4887 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF51B3C88FA007D4887 /* Icon-Small@3x.png */; };
+		3EE25C0A1B3C88FA007D4887 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF61B3C88FA007D4887 /* Icon-60.png */; };
+		3EE25C0B1B3C88FA007D4887 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF71B3C88FA007D4887 /* Icon-72.png */; };
+		3EE25C0C1B3C88FA007D4887 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF81B3C88FA007D4887 /* Icon-72@2x.png */; };
+		3EE25C0D1B3C88FA007D4887 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BF91B3C88FA007D4887 /* Icon-Small-50.png */; };
+		3EE25C0E1B3C88FA007D4887 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BFA1B3C88FA007D4887 /* Icon-Small-50@2x.png */; };
+		3EE25C0F1B3C88FA007D4887 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BFB1B3C88FA007D4887 /* Icon.png */; };
+		3EE25C101B3C88FA007D4887 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BFC1B3C88FA007D4887 /* Icon@2x.png */; };
+		3EE25C111B3C88FA007D4887 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BFD1B3C88FA007D4887 /* iTunesArtwork.png */; };
+		3EE25C121B3C88FA007D4887 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE25BFE1B3C88FA007D4887 /* iTunesArtwork@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +64,32 @@
 		3EE25BCB1B33574E007D4887 /* foodDrugDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodDrugDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE25BD01B33574E007D4887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE25BD11B33574E007D4887 /* foodDrugDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDrugDiaryTests.swift; sourceTree = "<group>"; };
+		3EE25BDE1B3369D3007D4887 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		3EE25BE01B336A85007D4887 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		3EE25BE21B336D50007D4887 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3EE25BE41B347B4B007D4887 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		3EE25BE61B3C8713007D4887 /* Message-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-50.png"; sourceTree = "<group>"; };
+		3EE25BE81B3C8749007D4887 /* Note-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Note-50.png"; sourceTree = "<group>"; };
+		3EE25BEB1B3C88FA007D4887 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		3EE25BEC1B3C88FA007D4887 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		3EE25BED1B3C88FA007D4887 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		3EE25BEE1B3C88FA007D4887 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		3EE25BEF1B3C88FA007D4887 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		3EE25BF01B3C88FA007D4887 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		3EE25BF11B3C88FA007D4887 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		3EE25BF21B3C88FA007D4887 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		3EE25BF31B3C88FA007D4887 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		3EE25BF41B3C88FA007D4887 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		3EE25BF51B3C88FA007D4887 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		3EE25BF61B3C88FA007D4887 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		3EE25BF71B3C88FA007D4887 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		3EE25BF81B3C88FA007D4887 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		3EE25BF91B3C88FA007D4887 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		3EE25BFA1B3C88FA007D4887 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		3EE25BFB1B3C88FA007D4887 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3EE25BFC1B3C88FA007D4887 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		3EE25BFD1B3C88FA007D4887 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		3EE25BFE1B3C88FA007D4887 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +137,21 @@
 				3EE25BBF1B33574E007D4887 /* Main.storyboard */,
 				3EE25BC21B33574E007D4887 /* Images.xcassets */,
 				3EE25BC41B33574E007D4887 /* LaunchScreen.xib */,
+				3EE25BEA1B3C88FA007D4887 /* AppIcon.appiconset */,
+				3EE25BF61B3C88FA007D4887 /* Icon-60.png */,
+				3EE25BF71B3C88FA007D4887 /* Icon-72.png */,
+				3EE25BF81B3C88FA007D4887 /* Icon-72@2x.png */,
+				3EE25BF91B3C88FA007D4887 /* Icon-Small-50.png */,
+				3EE25BFA1B3C88FA007D4887 /* Icon-Small-50@2x.png */,
+				3EE25BFB1B3C88FA007D4887 /* Icon.png */,
+				3EE25BFC1B3C88FA007D4887 /* Icon@2x.png */,
+				3EE25BFD1B3C88FA007D4887 /* iTunesArtwork.png */,
+				3EE25BFE1B3C88FA007D4887 /* iTunesArtwork@2x.png */,
 				3EE25BB71B33574E007D4887 /* Supporting Files */,
+				3EE25BDE1B3369D3007D4887 /* Entry.swift */,
+				3EE25BE01B336A85007D4887 /* Date.swift */,
+				3EE25BE21B336D50007D4887 /* Model.swift */,
+				3EE25BE41B347B4B007D4887 /* EntryViewController.swift */,
 			);
 			path = foodDrugDiary;
 			sourceTree = "<group>";
@@ -93,6 +159,8 @@
 		3EE25BB71B33574E007D4887 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3EE25BE81B3C8749007D4887 /* Note-50.png */,
+				3EE25BE61B3C8713007D4887 /* Message-50.png */,
 				3EE25BB81B33574E007D4887 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +181,24 @@
 				3EE25BD01B33574E007D4887 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EE25BEA1B3C88FA007D4887 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				3EE25BEB1B3C88FA007D4887 /* Contents.json */,
+				3EE25BEC1B3C88FA007D4887 /* Icon-40.png */,
+				3EE25BED1B3C88FA007D4887 /* Icon-40@2x.png */,
+				3EE25BEE1B3C88FA007D4887 /* Icon-40@3x.png */,
+				3EE25BEF1B3C88FA007D4887 /* Icon-60@2x.png */,
+				3EE25BF01B3C88FA007D4887 /* Icon-60@3x.png */,
+				3EE25BF11B3C88FA007D4887 /* Icon-76.png */,
+				3EE25BF21B3C88FA007D4887 /* Icon-76@2x.png */,
+				3EE25BF31B3C88FA007D4887 /* Icon-Small.png */,
+				3EE25BF41B3C88FA007D4887 /* Icon-Small@2x.png */,
+				3EE25BF51B3C88FA007D4887 /* Icon-Small@3x.png */,
+			);
+			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +250,7 @@
 				TargetAttributes = {
 					3EE25BB31B33574E007D4887 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = THQVB4FLJ2;
 					};
 					3EE25BCA1B33574E007D4887 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -195,9 +282,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE25BE91B3C8749007D4887 /* Note-50.png in Resources */,
+				3EE25C031B3C88FA007D4887 /* Icon-60@2x.png in Resources */,
+				3EE25BE71B3C8714007D4887 /* Message-50.png in Resources */,
+				3EE25C081B3C88FA007D4887 /* Icon-Small@2x.png in Resources */,
+				3EE25C061B3C88FA007D4887 /* Icon-76@2x.png in Resources */,
+				3EE25C101B3C88FA007D4887 /* Icon@2x.png in Resources */,
+				3EE25C111B3C88FA007D4887 /* iTunesArtwork.png in Resources */,
 				3EE25BC11B33574E007D4887 /* Main.storyboard in Resources */,
+				3EE25C001B3C88FA007D4887 /* Icon-40.png in Resources */,
+				3EE25C051B3C88FA007D4887 /* Icon-76.png in Resources */,
+				3EE25C0F1B3C88FA007D4887 /* Icon.png in Resources */,
+				3EE25C121B3C88FA007D4887 /* iTunesArtwork@2x.png in Resources */,
+				3EE25C021B3C88FA007D4887 /* Icon-40@3x.png in Resources */,
+				3EE25C0E1B3C88FA007D4887 /* Icon-Small-50@2x.png in Resources */,
+				3EE25C071B3C88FA007D4887 /* Icon-Small.png in Resources */,
 				3EE25BC61B33574E007D4887 /* LaunchScreen.xib in Resources */,
+				3EE25C0B1B3C88FA007D4887 /* Icon-72.png in Resources */,
+				3EE25C011B3C88FA007D4887 /* Icon-40@2x.png in Resources */,
+				3EE25C0C1B3C88FA007D4887 /* Icon-72@2x.png in Resources */,
 				3EE25BC31B33574E007D4887 /* Images.xcassets in Resources */,
+				3EE25BFF1B3C88FA007D4887 /* Contents.json in Resources */,
+				3EE25C091B3C88FA007D4887 /* Icon-Small@3x.png in Resources */,
+				3EE25C0D1B3C88FA007D4887 /* Icon-Small-50.png in Resources */,
+				3EE25C041B3C88FA007D4887 /* Icon-60@3x.png in Resources */,
+				3EE25C0A1B3C88FA007D4887 /* Icon-60.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE25BDF1B3369D3007D4887 /* Entry.swift in Sources */,
+				3EE25BE11B336A85007D4887 /* Date.swift in Sources */,
 				3EE25BBE1B33574E007D4887 /* SecondViewController.swift in Sources */,
+				3EE25BE51B347B4B007D4887 /* EntryViewController.swift in Sources */,
+				3EE25BE31B336D50007D4887 /* Model.swift in Sources */,
 				3EE25BBA1B33574E007D4887 /* AppDelegate.swift in Sources */,
 				3EE25BBC1B33574E007D4887 /* FirstViewController.swift in Sources */,
 			);
@@ -344,9 +457,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = foodDrugDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +470,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = foodDrugDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
