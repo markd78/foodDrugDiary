@@ -8,7 +8,17 @@
 
 import UIKit
 
-class FirstViewController: UITableViewController, UISearchBarDelegate  {
+public func ==(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs === rhs || lhs.compare(rhs) == .OrderedSame
+}
+
+public func <(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs.compare(rhs) == .OrderedAscending
+}
+
+extension NSDate: Comparable { }
+
+class FirstViewController: UITableViewController, UISearchBarDelegate, FilterChangedDelegate  {
 
     let model = Model.sharedInstance;
     @IBOutlet var searchBar: UISearchBar!
@@ -35,17 +45,30 @@ class FirstViewController: UITableViewController, UISearchBarDelegate  {
         })
     }
     
+    func sorterForDate(this:Entry, that:Entry) -> Bool {
+        return this.date > that.date
+    }
+    
+    func sortDisplayedEntriesByDate()
+    {
+        model.displayedEntries.sort(sorterForDate)
+        model.applyFilter()
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated);
         
-         self.filterContentForSearchText("", scope: "All")
+        self.filterContentForSearchText("", scope: "All")
+        model.applyFilter()
         self.tableView.reloadData()
+        sortDisplayedEntriesByDate()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.navigationBarHidden = false;
          self.tabBarController?.tabBar.hidden = false;
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,6 +97,8 @@ class FirstViewController: UITableViewController, UISearchBarDelegate  {
             })
             
         }
+        
+        sortDisplayedEntriesByDate()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
@@ -81,6 +106,8 @@ class FirstViewController: UITableViewController, UISearchBarDelegate  {
         self.tableView.reloadData()
         
         self.searchBar.resignFirstResponder()
+        
+        sortDisplayedEntriesByDate()
     }
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
@@ -139,6 +166,20 @@ class FirstViewController: UITableViewController, UISearchBarDelegate  {
         }
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowFilterFromSegue"
+        {
+            if let destinationVC = segue.destinationViewController as? FilterTableViewController{
+                destinationVC.currentFilter = Model.sharedInstance.currentFilter
+                destinationVC.delegate = self
+            }
+        }
+    }
+    
+    func filterChanged() {
+        self.tableView.reloadData()
     }
 }
 

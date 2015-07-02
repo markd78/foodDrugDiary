@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ECE85361B45BF3B00555FBD /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE85351B45BF3B00555FBD /* Filter.swift */; };
+		3ECE85381B45D6BD00555FBD /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE85371B45D6BD00555FBD /* FilterTableViewController.swift */; };
+		3ECE853A1B45DB3D00555FBD /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE85391B45DB3D00555FBD /* SetTimeViewController.swift */; };
 		3EE25BBA1B33574E007D4887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BB91B33574E007D4887 /* AppDelegate.swift */; };
 		3EE25BBC1B33574E007D4887 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BBB1B33574E007D4887 /* FirstViewController.swift */; };
 		3EE25BBE1B33574E007D4887 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE25BBD1B33574E007D4887 /* SecondViewController.swift */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3ECE85351B45BF3B00555FBD /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		3ECE85371B45D6BD00555FBD /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		3ECE85391B45DB3D00555FBD /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		3EE25BB41B33574E007D4887 /* foodDrugDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodDrugDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE25BB81B33574E007D4887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE25BB91B33574E007D4887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 				3EE25BB91B33574E007D4887 /* AppDelegate.swift */,
 				3EE25BBB1B33574E007D4887 /* FirstViewController.swift */,
 				3EE25BBD1B33574E007D4887 /* SecondViewController.swift */,
+				3ECE85371B45D6BD00555FBD /* FilterTableViewController.swift */,
+				3ECE85391B45DB3D00555FBD /* SetTimeViewController.swift */,
 				3EE25BBF1B33574E007D4887 /* Main.storyboard */,
 				3EE25BC21B33574E007D4887 /* Images.xcassets */,
 				3EE25BC41B33574E007D4887 /* LaunchScreen.xib */,
@@ -152,6 +160,7 @@
 				3EE25BE01B336A85007D4887 /* Date.swift */,
 				3EE25BE21B336D50007D4887 /* Model.swift */,
 				3EE25BE41B347B4B007D4887 /* EntryViewController.swift */,
+				3ECE85351B45BF3B00555FBD /* Filter.swift */,
 			);
 			path = foodDrugDiary;
 			sourceTree = "<group>";
@@ -324,11 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECE853A1B45DB3D00555FBD /* SetTimeViewController.swift in Sources */,
 				3EE25BDF1B3369D3007D4887 /* Entry.swift in Sources */,
+				3ECE85381B45D6BD00555FBD /* FilterTableViewController.swift in Sources */,
 				3EE25BE11B336A85007D4887 /* Date.swift in Sources */,
 				3EE25BBE1B33574E007D4887 /* SecondViewController.swift in Sources */,
 				3EE25BE51B347B4B007D4887 /* EntryViewController.swift in Sources */,
 				3EE25BE31B336D50007D4887 /* Model.swift in Sources */,
+				3ECE85361B45BF3B00555FBD /* Filter.swift in Sources */,
 				3EE25BBA1B33574E007D4887 /* AppDelegate.swift in Sources */,
 				3EE25BBC1B33574E007D4887 /* FirstViewController.swift in Sources */,
 			);
@@ -532,6 +544,7 @@
 				3EE25BD71B33574E007D4887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EE25BD81B33574E007D4887 /* Build configuration list for PBXNativeTarget "foodDrugDiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +553,7 @@
 				3EE25BDA1B33574E007D4887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

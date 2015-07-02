@@ -27,6 +27,7 @@ public class Model {
     
     var allEntries = [Entry]()
     var displayedEntries = [Entry]()
+    var currentFilter:Filter = Filter()
 
     public func addNewEntry(entry:Entry)
     {
@@ -38,6 +39,52 @@ public class Model {
     {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject( NSKeyedArchiver.archivedDataWithRootObject(allEntries) , forKey: "entries")
+    }
+    
+    public func setFilter(filter:Filter)
+    {
+        self.currentFilter = filter
+        applyFilter()
+    }
+    
+    func entryFilter(entry:Entry) -> Bool {
+        
+        if (entry.entryType == EntryType.food && !currentFilter.isFood)
+        {
+            return false
+        }
+        
+        if (entry.entryType == EntryType.symptoms && !currentFilter.isSymptom)
+        {
+            return false
+        }
+        
+        
+        if (entry.entryType == EntryType.meds && !currentFilter.isMeds)
+        {
+            return false
+        }
+        
+        
+        if (currentFilter.useDate  && (currentFilter.fromDate > entry.date || currentFilter.toDate < entry.date))
+        {
+            return false
+        }
+        
+        return true
+        
+    }
+    
+    public func resetFilter()
+    {
+        self.currentFilter = Filter()
+    }
+    
+    public func applyFilter()
+    {
+        
+        
+        displayedEntries = displayedEntries.filter(entryFilter)
     }
     
 }
