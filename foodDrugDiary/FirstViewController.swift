@@ -39,7 +39,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate, FilterCha
             let isAll:Bool = (scope == "All");
             let isScopeMatch:Bool = (entry.entryType.rawValue == scope);
             let categoryMatch:Bool = (isAll || isScopeMatch);
-            let stringMatch = entry.textDesc.rangeOfString(searchText);
+            let stringMatch = entry.textDesc.lowercaseString.rangeOfString(searchText.lowercaseString);
             let allow = categoryMatch && (searchText == "" || stringMatch != nil);
             return allow;
         })
