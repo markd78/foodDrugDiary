@@ -25,7 +25,7 @@ public class Entry : NSObject, NSCoding {
     
     public override init() {}
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         if let date = aDecoder.decodeObjectForKey("date") as? NSDate {
             self.date = date
         }

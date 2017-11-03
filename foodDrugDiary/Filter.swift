@@ -11,8 +11,8 @@ import Foundation
 public class Filter : NSObject
 {
     public var useDate:Bool = false
-    public var fromDate:NSDate = NSDate.distantPast() as! NSDate
-    public var toDate:NSDate = NSDate.distantFuture() as! NSDate
+    public var fromDate:NSDate = NSDate.distantPast() 
+    public var toDate:NSDate = NSDate.distantFuture() 
     public var isFood:Bool = true
     public var isMeds:Bool = true
     public var isSymptom:Bool = true

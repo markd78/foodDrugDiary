@@ -33,13 +33,13 @@ public class EntryViewController: UITableViewController {
     
     @IBAction func cancelButtonPressed(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
-        println("You clicked the button")
+        print("You clicked the button")
     }
     
     
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        let cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
         
         if (indexPath.section == 1)
         {
@@ -87,7 +87,7 @@ public class EntryViewController: UITableViewController {
     }
     
     override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You selected cell #\(indexPath.row)!")
+        print("You selected cell #\(indexPath.row)!")
         
         if (indexPath.section == 1)
         {
@@ -114,7 +114,7 @@ public class EntryViewController: UITableViewController {
         
         if (entryEditing == nil)
         {
-            var entry:Entry =  Entry()
+            let entry:Entry =  Entry()
             entry.date = self.dateTime!.date
             entry.textDesc = self.textView!.text
         

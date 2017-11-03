@@ -48,7 +48,7 @@ class FilterTableViewController: UITableViewController, TimeChangedViewControlle
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        let cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
         
         if (indexPath.section == 0)
         {
@@ -67,7 +67,7 @@ class FilterTableViewController: UITableViewController, TimeChangedViewControlle
             {
                 let dateFormatter = NSDateFormatter()//3
                 
-                var theDateFormat = NSDateFormatterStyle.ShortStyle //5
+                let theDateFormat = NSDateFormatterStyle.ShortStyle //5
                 let theTimeFormat = NSDateFormatterStyle.ShortStyle//6
                 
                 dateFormatter.dateStyle = theDateFormat//8
@@ -90,7 +90,7 @@ class FilterTableViewController: UITableViewController, TimeChangedViewControlle
             {
                 let dateFormatter = NSDateFormatter()//3
                 
-                var theDateFormat = NSDateFormatterStyle.ShortStyle //5
+                let theDateFormat = NSDateFormatterStyle.ShortStyle //5
                 let theTimeFormat = NSDateFormatterStyle.ShortStyle//6
                 
                 dateFormatter.dateStyle = theDateFormat//8
@@ -178,8 +178,8 @@ class FilterTableViewController: UITableViewController, TimeChangedViewControlle
                 }
                 else
                 {
-                    self.currentFilter.fromDate = NSDate.distantPast() as! NSDate
-                    self.currentFilter.toDate = NSDate.distantFuture() as! NSDate
+                    self.currentFilter.fromDate = NSDate.distantPast() 
+                    self.currentFilter.toDate = NSDate.distantFuture() 
                 }
                 
                 currentFilter.useDate = !currentFilter.useDate

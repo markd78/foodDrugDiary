@@ -51,7 +51,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate, FilterCha
     
     func sortDisplayedEntriesByDate()
     {
-        model.displayedEntries.sort(sorterForDate)
+        model.displayedEntries.sortInPlace(sorterForDate)
         model.applyFilter()
     }
     
@@ -89,9 +89,9 @@ class FirstViewController: UITableViewController, UISearchBarDelegate, FilterCha
         self.tableView.reloadData()
         
         // The user clicked the [X] button or otherwise cleared the text.
-        if(count(searchText) == 0 ) {
+        if(searchText.characters.count == 0 ) {
             
-            var dispatchTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.1 * Double(NSEC_PER_SEC)))
+            let dispatchTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.1 * Double(NSEC_PER_SEC)))
             dispatch_after(dispatchTime, dispatch_get_main_queue(), {
                self.searchBar.resignFirstResponder()
             })
@@ -130,7 +130,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate, FilterCha
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         
         var entry : Entry
             entry = model.displayedEntries[indexPath.row]
@@ -141,7 +141,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate, FilterCha
         
         let dateFormatter = NSDateFormatter()//3
         
-        var theDateFormat = NSDateFormatterStyle.ShortStyle //5
+        let theDateFormat = NSDateFormatterStyle.ShortStyle //5
         let theTimeFormat = NSDateFormatterStyle.ShortStyle//6
         
         dateFormatter.dateStyle = theDateFormat//8

@@ -96,9 +96,12 @@ class SecondViewController: UIViewController,MFMailComposeViewControllerDelegate
                 let plistfile = "fodoDiaryLogs.csv"
                 let plistpath = dictionary.stringByAppendingPathComponent(plistfile);
                 
-                println("\(plistpath)")
+                print("\(plistpath)")
                 
-                csvString.writeToFile(plistpath, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+                do {
+                    try csvString.writeToFile(plistpath, atomically: true, encoding: NSUTF8StringEncoding)
+                } catch _ {
+                }
                 
                 var testData: NSData = NSData(contentsOfFile: plistpath)!
                 mailComposerVC.addAttachmentData(testData, mimeType: "text/csv", fileName: "fodoDiaryLogs.csv")
@@ -116,7 +119,7 @@ class SecondViewController: UIViewController,MFMailComposeViewControllerDelegate
         return mailComposerVC
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!)
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?)
     {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
